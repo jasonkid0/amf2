@@ -1,0 +1,116 @@
+.background{
+background-image: url('../public/img/OB82160.jpg'); background-size: cover;
+}
+::-webkit-input-placeholder {
+    color:    #fff;
+}
+
+:-moz-placeholder {
+    color:    #999;
+}
+::-moz-placeholder {
+    color:    #999;
+}
+:-ms-input-placeholder {
+    color:    #999;
+}
+
+#look_up::-webkit-input-placeholder
+{
+  color:    #f9b88d;
+}
+
+.login {
+	margin-top: 50px;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+.wrapper{
+    background: #eee;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.wrapper textarea{
+	border-radius: 5px;
+	padding: 10px;
+    border:none;
+    width:100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #999;
+    resize: none;
+}
+.wrapper textarea:focus{
+    outline: none;
+}
+.controls{
+    text-align: right;
+    margin-top: -6px;
+}
+button{
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    border: 1px solid #999;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: rgb(77,77,77);
+    border-width: 1px 0 0 1px;
+}
+
+/*Map API Start*/
+html, body, #map { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+        .nicebox {
+          position: absolute;
+          text-align: center;
+          font-family: calibri;
+          font-size: 10px;
+          z-index: 5;
+          box-shadow: 0 4px 6px -4px #333;
+          padding: 5px 5px;
+          background: rgb(255,255,255);
+          background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);
+          border: rgb(229, 229, 229) 1px solid;
+        }
+        #controls {
+          top: 10px;
+          left: 110px;
+          width: 360px;
+          height: 19px;
+        }
+        #data-box {
+          top: 10px;
+          left: 500px;
+          height: 19px;
+          line-height: 19px;
+          display: none;
+        }
+        #census-variable {
+          width: 360px;
+          height: 20px;
+          font-size: 12px;
+          font-family: calibri;
+        }
+        #legend { display: flex; display: none; -webkit-box; padding-top: 7px }
+        .color-key {
+          background: linear-gradient(to right,
+            hsl(5, 69%, 54%) 0%,
+            hsl(29, 71%, 51%) 17%,
+            hsl(54, 74%, 47%) 33%,
+            hsl(78, 76%, 44%) 50%,
+            hsl(102, 78%, 41%) 67%,
+            hsl(127, 81%, 37%) 83%,
+            hsl(151, 83%, 34%) 100%);
+          flex: 1;
+          -webkit-box-flex: 1;
+          margin: 0 5px;
+          text-align: left;
+          font-size: 1.0em;
+          line-height: 1.0em;
+        }
+        #data-value { font-size: 2.0em; font-weight: bold; font-family: calibri}
+        #data-label { font-size: 2.0em; font-weight: normal; padding-right: 10px; font-family: calibri }
+        #data-label:after { content: ':' }
+        #data-caret { margin-left: -5px; display: none; font-size: 14px; width: 14px}
+/*Map API End*/
